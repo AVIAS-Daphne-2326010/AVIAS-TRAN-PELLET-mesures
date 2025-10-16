@@ -1,0 +1,4 @@
+"Une mesure valide est le processus qui associe un nombre ou un symbole à un attribut d’une entité.
+Formellement, une mesure M est valide par rapport à un système de relations empiriques si elle est définie par l’application."
+
+Certaines métriques de Halstead sont difficiles à justifier, car la distinction entre opérateurs et opérandes n’est pas toujours claire, donc elles remettent en cause la correspondance entre la mesure et la réalité observée, donc leur validité.
