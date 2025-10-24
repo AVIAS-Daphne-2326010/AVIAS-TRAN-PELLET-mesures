@@ -1,0 +1,3 @@
+q8 dissertation : 
+
+Pour établir nos poids standart pour un tableau d'Albrecht l'objectif est de les trouvé vis à vis des projet déjà réalisé. L'évaluation de la compléxité qualitative reste toujours un problème car les demande d'un client ne seront jamais eact à celle d'un précédent. L'objectif vas donc être d'évaluer (en admettant une marge d'erreur) pour chaque modules un poid arbitrairement. Pour cela, on peut admettre un poid uniquement empiriquement, prendre des modèles d'évaluations de compléxité ou encore les décomposer jusqu'à trouver des modules mesurables. Pour conclure, l'évaluation temps de réalisations d'un projet est très modulable en fonction de son équipe et des différences de cahier des charges.
