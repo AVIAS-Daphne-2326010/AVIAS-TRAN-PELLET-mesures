@@ -1,0 +1,41 @@
+Durée d'entraînement : 79h
+Nombre de GPU : 64
+Type GPU : Tesla V100 -> TDP = 300W
+Facteur d'usage (utilisation moyenne) : 62,7% -> 0,627
+
+1. Calculer son empreinte carbone : 
+
+PUE = P total / P compute
+
+Puissance moyen par GPU : 300W * 0,627 = 188,1W
+Puissance totale (64 GPU) : 188,1W * 64 = 12038,4W 
+
+Energie consommée (79h), sans PUE : 12,0384kW * 97h ≈ 951,03 kWh
+Energie totale avec PUE : 
+	- PUE(1,10) = 1,10*951,03 = 1046,13 kWh
+	- PUE(1,59) = 1,59*951,03 = 1512,14 kWh
+	
+Emissions (kgCO2e)
+	- PUE = 1,10:
+		France : 1046,13 * 0,05 = 52,31
+		Monde : 1046,13 * 0,475 = 496,92
+	- PUE = 1,59:
+		France : 1512,14 * 0,05 = 75,61
+		Monde : 1512,14 * 0,475 = 718,27
+
+
+2. Recherche des hyperparamètres : 
+
+Avec PSF = 100
+- PUE = 1,10 : Energie = 104613,70 kWh
+	France = 5230,68 kgCO2e ≈ 5,23 tCO2e
+	Monde = 49691,51 kgCO2e ≈ 49,69 tCO2e
+- PUE = 1,59 : Energie = 151214,34 kWh
+	France = 7560,72 kgCO2e ≈ 7,56 tCO2e
+	Monde = 71826,81 kgCO2e ≈ 71,83 tCO2e
+	
+Un entraînement unique de BERT consomme ≈ 951 kWh (sans PUE) et produit entre ~52 et 76kgCO2e selon le PUE (en France). 
+Cependant la recherche d'hyperparamètres fait passer l'empreinte à plusieurs tonnes de CO2, montrant l'importance d'optimiser les runs et de limiter les expériences inutiles
+
+
+
