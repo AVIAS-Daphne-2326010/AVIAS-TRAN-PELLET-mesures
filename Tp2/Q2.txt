@@ -1,0 +1,9 @@
+1) La formule implémentée est bien celle utilisée dans le cours :  ecoindex_js/src/index.js
+
+2) Quantile(xi) = (n-1) + (xi-borneInf(n)) / borneSup(n)-borneInf(n)
+
+3) Pour évaluer l'EcoIndex, on va mesurer (complexité de la page, poids des données transférées, nombre de requêtes HHTP) une page représentative du site dans un scenario reproductible (même navigateur, résolution, connexion stable, cache vidé)
+
+4) voir fichier ecoindex_reference.json
+
+5) https://www.ecoindex.fr/ score: 88/100; note: A
