@@ -1,0 +1,14 @@
+On prendra en compte le projet SAE de l'année passée Tuteurs-Enseignants :
+https://github.com/AVIAS-Daphne-2326010/Tuteurs-Enseignants
+
+Dans ce fichier, nous analyserons, suite au projet, les métriques obtenues avec l'outil PhpMetrics (d'autres outils sont plus adaptés lorsque le travail est en cours, comme PHP Mess Detector pour PhpStorm). L’outil d’inspection « Complex function should be refactored » peut aussi permettre d’obtenir la complexité cyclomatique, le nombre de lignes de code, le niveau de nesting et le nombre de variables pour chaque méthode.
+
+Un autre fichier contenant les résultats est présent : Resultat_Phpmetrics.
+
+Dans ce projet, on peut globalement noter :
+- Les commentaires représentent ~30% du projet proportion correcte/dans la moyenne (LOC/LLOC).
+- Les classes et méthodes semblent trop chargées (au-dessus des moyennes), il faudrait re-découper certaines méthodes et de regrouper certaines classes (LLOC/classe méthode).
+- Pas d'utilisation d'interfaces (peut être mis en place).
+- La complexité de certaines classes est trop élevée (CC et WMC).
+- Le code est complexe à comprendre humainement (Average Difficulty).
+- Le nombre de bugs et d’erreurs est très faible (Violations).
