@@ -1,0 +1,28 @@
+1.
+Selon l'article cité en CM l’énergie consommée en kWh est calculable grâce à la formule :
+E=t×(nc⋅Pc⋅uc+nm⋅Pm)×PUE×0.001
+
+Et la quantité de CO2 émise en gramme est exprimée par :
+C = E × CI
+
+Selon les valeurs données dans le Tp2 et l'article, on a : 
+t (la durée d'exécution) = 3 semaines = 504h
+nc (nombre de coeur) = 12
+Pc (selon les spécificités du processeur) = 10W
+Uc (hypothèse donnée dans le CM) = 1
+nm (mémoire allouée) = 10 GB 
+Pm (selon le CM) = 0.3725 W/GB 
+PUE (moyenne mondiale) = 1.67
+CI (moyenne mondiale) = 475 gCO2e / kWh
+
+E=504×(12*10*1)+(10*0.3725)×1.67×0.001 ~= 104.12 kWh
+C = 104.12 * 475 ~= 49,465 kgCO2e
+
+2.
+D'après le site Green Algorithms calculator, on trouve pour ces mêmes specificitées : 49.47 kgCO2e
+
+3.
+Selon l'article on considère que chaque niveau d'énergie sera un test différrent, on multiplie donc le précédent résultat par 11 
+
+4.
+D'après ce même site, 10.82 kgCO2e correspond à 4.5 ans de vie d'un arbre adulte.
